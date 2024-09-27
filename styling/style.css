@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --tavuk-ustu: #08101e;
+    --tavuk-alti: #09111f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.sincap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #0a121f, #0a1220);
+    padding: 20px 0;
+    border-radius: 1px;
+    color: #fff;
+}
+
+.sincap .navi a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.sincap .signin {
+    color: #fff;
+    padding: 9px 23px;
+    background: rgba(58, 104, 184, 1);
+    border-radius: 5px;
+    border: none;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--tavuk-ustu), var(--tavuk-alti));
+}
+
+
+
+
+.tavuk .container h6 {
+    color: rgba(58, 104, 184, 1);
+    margin-top: 14vh;
+}
+
+.tavuk .container h1 {
+    color: #fff;
+    font-weight: bold;
+    padding: 1vh 0 4vh;
+}
+
+.tavuk .container article {
+    color: rgb(255, 255, 255, .7);
+}
+
+.tavuk button {
+    color: #fff;
+    background: rgba(58, 104, 184, 1);
+    border-radius: 5px;
+    padding: 1.5vh 3vh;
+    border: none;
+    margin-top: 5vh;
+    margin-right: 1.5vh;
+}
+
+.left button img {
+    width: 12px;
+}
+
+
+
+
+@media(min-width:768px) {
+    header nav, header button {
+        display: flex;
+    }
+
+    .tavuk .container {
+        display: flex;
+        padding-top: 4vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .col-md-6, .col-lg-7 {
+        box-sizing: border-box;
+        border: none;
+        width: 35vw;
+        margin-right: 1vw;
+        padding: 10px 30px;
+    }
+
+    .imags {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+
+
+    .fa-bars {
+        display: none;
+    }
+}
